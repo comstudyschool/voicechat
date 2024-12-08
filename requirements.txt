@@ -169,3 +169,4 @@ win_inet_pton==1.1.0
 yarl==1.18.3
 zipp==3.21.0
 zstandard==0.23.0
+PyPDF2==3.0.1
