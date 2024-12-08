@@ -1,2 +1,2 @@
 ffmpeg
-pypdf2
+PyPDF2
