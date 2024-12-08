@@ -23,7 +23,9 @@ def extract_text_from_pdf(pdf_path):
 
 # 텍스트를 벡터로 변환
 def get_embedding(text, model="text-embedding-ada-002"):
-    response = openai.Embedding.create(input=[text], model=model)
+    # response = openai.Embedding.create(input=[text], model=model)
+    response = openai.Embedding.create(model=model, input=text)
+    embedding = response["data"][0]["embedding"]
     return response["data"][0]["embedding"]
 
 # 코사인 유사도 계산
